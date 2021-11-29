@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>R . K . A . B</title>
+    <link rel="stylesheet" "type=text/css" href="{% static 'rk/css/styles-merged.css' %}">
+    <link rel="stylesheet" href="{% static 'rk/css/style.min.css'%}">
+    <link rel="stylesheet" href="{% static 'rk/fonts/icomoon/style.css' %}">
+    <link rel="stylesheet" href="{% static 'rk/fonts3/material-design-iconic-font/css/material-design-iconic-font.min.css'%}">
+    <link rel="stylesheet" href="{% static 'rk/css4/style.css'%}">
+    <link href="{% static 'rk/css1/style.css'%}"  rel="stylesheet"  type="text/css" >
+    <link href="{% static 'rk/css1/style2.css' %}"  rel="stylesheet"  type="text/css" >
+
+    <!--[if lt IE 9]>
+      <script src="{% static 'rk/js/vendor/html5shiv.min.js' %} "></script>
+      <script src="{% static 'rk/js/vendor/respond.min.js' %}"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+
+    <nav class="navbar navbar-default probootstrap-navbar">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://localhost:8000/index/" >RAJ</a>
+
+        </div>
+
+        <div id="navbar-collapse" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+
+            <li><a href="#" data-nav-section="features">This website is created by Raj Krishna</a></li>
+
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+
+    <section class="probootstrap-hero prohttp://localhost/probootstrap/frame/#featuresbootstrap-slant" style="background-image:url({% static 'rk/img/image_1.jpg'%});" data-section="home" data-stellar-background-ratio="0.5">
+      <div class="container">
+        <div class="row intro-text">
+          <div class="col-md-8 col-md-offset-2 text-center">
+            <h1 class="probootstrap-heading probootstrap-animate"><b>R . K . A . B<br> signin</b></h1>
+            <div class="login-form">
+              <form  action="page" method="GET" class="probootstrap-heading probootstrap-animate">
+                {%csrf_token%}
+                                              <select class="form-control" name='stan'>
+                                              {% if rawdata%}
+                                              {% for i in rawdata%}
+                                              <option>{{i.Teacher_Name}}</option>
+                                              {%endfor%}
+                                              {%endif%}
+                                              </select>
+                                              <select class="form-control" name='stan2'>
+                                              {% if rawdata%}
+                                              {% for i in rawdata%}
+                                              <option>{{i.Subject}}</option>
+                                              {%endfor%}
+                                              {%endif%}
+                                              </select>
+                                              <input type="submit" value="Submit">
+              </form>
+      			</div>
+        </div>
+          </div>
+        </div>
+
+    </section>
+    <script src="{% static 'rk/js/scripts.min.js'%}"></script>
+    <script src="{% static 'rk/js/custom.js' %}"></script>
+
+  </body>
+</html>

@@ -1,0 +1,90 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>R . K . A . B</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/vendor/bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/fonts2/font-awesome-4.7.0/css/font-awesome.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/vendor/animate/animate.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/vendor/select2/select2.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/vendor/perfect-scrollbar/perfect-scrollbar.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/css2/util.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/css2/main.css'%}">
+    <link href="{% static 'rk/css1/style.css'%}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'rk/css1/style2.css' %}" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+<div class="limiter">
+  <div class="container-table100">
+    <div class="wrap-table100">
+      <div class="table100 ver3 m-b-110">
+        <div class="video">
+      <div class="center-container">
+          <div class="w3ls-agileinfo">
+          <h1> Select Your student </h1>
+        </div>
+  <div class="bg-agile">
+          <div class="login-form">
+        <form  action="startup2" method="GET" >
+                       <select class="form-control" name='stan'>
+                             {% if rawdata%}
+                             {% for i in rawdata%}
+                             <option>{{i.Student_name}}</option>
+                             {%endfor%}
+                       {%endif%}
+                       </select>
+                       <input type="submit" value="Submit">
+        </form>
+      </div>
+      </div>
+      </div>
+</div>
+<div class="w3ls-agileinfo">
+<h1> List of your student </h1>
+</div>
+            <table data-vertable="ver3">
+                      <thead>
+                     	<tr class="row100 head">
+      			<th class="column100 column1" data-column="column1"></th>
+      			<th class="column100 column2" data-column="column2">Class</th>
+      			<th class="column100 column3" data-column="column3">Section</th>
+      			<th class="column100 column4" data-column="column4">Email</th>
+      			<th class="column100 column5" data-column="column5">Father's name</th>
+      			<th class="column100 column6" data-column="column6">Mother's name</th>
+      			<th class="column100 column7" data-column="column7">State</th>
+      			<th class="column100 column8" data-column="column8">Phone number</th>
+      		</tr>
+      		</thead>
+                      <tbody>
+                        {% if rawdata%}
+                        {% for i in rawdata%}
+        	<tr class="row100">
+
+      			<td class="column100 column1" data-column="column1">{{i.Student_name}}</td>
+      			<td class="column100 column2" data-column="column2">{{i.Class}}</td>
+      			<td class="column100 column3" data-column="column3">{{i.Section}}</td>
+      			<td class="column100 column4" data-column="column4">{{i.email}}</td>
+      			<td class="column100 column5" data-column="column5">{{i.father_name}}</td>
+      			<td class="column100 column6" data-column="column6">{{i.mother_name}}</td>
+      			<td class="column100 column7" data-column="column7">{{i.State}}</td>
+      			<td class="column100 column8" data-column="column8">{{i.phone_number}}</td>
+
+      		</tr>
+                        {%endfor%}
+                        {%endif%}
+      	</tbody>
+       </table>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <script src="{% static 'rk/vendor/jquery/jquery-3.2.1.min.js'%}"></script>
+   	   <script src="{% static 'rk/vendor/bootstrap/js/popper.js'%}"></script>
+       	<script src="{% static 'rk/vendor/bootstrap/js/bootstrap.min.js'%}"></script>
+        <script src="{% static 'rk/vendor/select2/select2.min.js'%}"></script>
+   	<script src="{% static 'rk/js/main.js'%}"></script>
+  </body>
+  </html>

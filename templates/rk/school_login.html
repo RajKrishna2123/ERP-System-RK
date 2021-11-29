@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>R.K.A.B Singn Up Form</title>
+    <link href="{% static 'rk/css1/style.css'%}"  rel="stylesheet"  type="text/css" >
+    <link href="{% static 'rk/css1/style2.css' %}"  rel="stylesheet"  type="text/css" >
+</head>
+<body style="background:url({% static 'rk/img/course.jpg' %})no-repeat;">
+     <div class="video">
+	<div class="center-container">
+	    <div class="w3ls-agileinfo">
+			<h1> Singn UP </h1>
+		</div>
+		 <div class="bg-agile">
+			<h2> Your Details </h2>
+			<div class="login-form">
+				<form  action="school_database_updater/" method="GET">
+    			{%csrf_token%}
+					<input type="text"  name="SCHOOL_name" placeholder="SCHOOL NAME" required="" >
+					<input type="text"  name="ys" placeholder="state" required="" >
+
+            <input type="submit" value="Submit">
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

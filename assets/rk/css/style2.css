@@ -1,0 +1,32 @@
+#header { 
+   background-image:url("multimedia/gk.jpg") ;
+   line-height:45px;
+   text-align: center;
+   width: 1330px;
+}
+#homepageheaderimage {
+   margin-top:8px;
+   width:1330px;
+   height:500px;
+   align:certer;
+}
+#results {
+   margin-top:10px
+   width:200px;
+   height:200px;
+}
+#table {
+margin-top:30px;
+background-color:lightgray;
+
+}
+#quick{
+ border: 4px solid blue;
+ }
+#footer{
+   margin-top:10px;
+   background-color:#78281F ;
+   line-height:100px;
+   text-align: center;
+   width: 1330px;
+}
