@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <title>R . K . A . B</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/vendor/bootstrap/css/bootstrap.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/fonts2/font-awesome-4.7.0/css/font-awesome.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/vendor/animate/animate.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/vendor/select2/select2.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/vendor/perfect-scrollbar/perfect-scrollbar.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/css2/util.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'rk/css2/main.css'%}">
+    <link href="{% static 'rk/css1/style.css'%}" rel="stylesheet" type="text/css" media="all" />
+    <link href="{% static 'rk/css1/style2.css' %}" rel="stylesheet" type="text/css" media="all" />
+  </head>
+  <body>
+<div class="limiter">
+<div class="container-table100">
+
+{%for i in rawdata.raw2%}
+<h1>{{i.SCHOOL_name}}<h1><br>
+<h2>The Best and prestigius school of this<br>
+  city and here are the results
+<h2>Name: {{i.Student_name}}  Class: {{i.Class}}-{{i.Section}}<br>
+  Father name:{{i.father_name}}  Mother name:{{i.mother_name}}</h2><br>
+<h2>  State:{{i.State}}     Email:{{i.email}}</h2>
+
+
+{{"<!--"}}
+{%endfor%}
+{{"-->"}}
+
+
+</div>
+</div>
+
+
+
+<div class="limiter">
+<div class="container-table100">
+<div class="wrap-table100">
+<div class="table100 ver2 m-b-110">
+<table data-vertable="ver4">
+	<thead>
+	<tr class="row100 head">
+		<th class="column100 column1" data-column="column1"></th>
+		<th class="column100 column2" data-column="column2">Unit1</th>
+		<th class="column100 column3" data-column="column3">Unit2</th>
+		<th class="column100 column4" data-column="column4">First half total</th>
+		<th class="column100 column5" data-column="column5">unit3</th>
+		<th class="column100 column6" data-column="column6">Final</th>
+		<th class="column100 column7" data-column="column7">Second half Total</th>
+		<th class="column100 column8" data-column="column8">practicle</th>
+    <th class="column100 column8" data-column="column8">Total </th>
+	</tr>
+	</thead>
+	<tbody>
+    {%for i in rawdata.raw1%}
+
+
+
+	<tr class="row100">
+
+		<td class="column100 column1" data-column="column1">{{i.subject}}</td>
+		<td class="column100 column2" data-column="column2">{{i.unit1}}</td>
+		<td class="column100 column3" data-column="column3">{{i.unit2}}</td>
+		<td class="column100 column4" data-column="column4">{{rawdata.raw4.data1.sm1}}%</td>
+		<td class="column100 column5" data-column="column5">{{i.unit3}}</td>
+		<td class="column100 column6" data-column="column6">{{i.final}}</td>
+		<td class="column100 column7" data-column="column7">{{rawdata.raw4.data1.sm2}}%</td>
+		<td class="column100 column8" data-column="column8">{{i.practicle}}</td>
+    <td class="column100 column8" data-column="column8">{{rawdata.raw4.data1.sm3}}%</td>
+
+	</tr>
+{%endfor%}
+
+
+  {%for j in rawdata.raw3%}
+
+
+<tr class="row100">
+
+  <td class="column100 column1" data-column="column1">{{j.subject}}</td>
+  <td class="column100 column2" data-column="column2">{{j.unit1}}</td>
+  <td class="column100 column3" data-column="column3">{{j.unit2}}</td>
+  <td class="column100 column4" data-column="column4">{{rawdata.raw4.data1.sm1}}%</td>
+  <td class="column100 column5" data-column="column5">{{j.unit3}}</td>
+  <td class="column100 column6" data-column="column6">{{j.final}}</td>
+  <td class="column100 column7" data-column="column7">{{rawdata.raw4.data1.sm2}}%</td>
+  <td class="column100 column8" data-column="column8">{{j.practicle}}</td>
+  <td class="column100 column8" data-column="column8">{{rawdata.raw4.data1.sm3}}%</td>
+
+</tr>
+
+
+{%endfor%}
+
+
+
+
+	</tbody>
+	</table>
+	</div>
+			</div>
+		</div>
+	</div>
+<script src="{% static 'rk/vendor/jquery/jquery-3.2.1.min.js'%}"></script>
+        <script src="{% static 'rk/vendor/bootstrap/js/popper.js'%}"></script>
+       	<script src="{% static 'rk/vendor/bootstrap/js/bootstrap.min.js'%}"></script>
+        <script src="{% static 'rk/vendor/select2/select2.min.js'%}"></script>
+   	<script src="{% static 'rk/js/main.js'%}"></script>
+</body>
+</html>

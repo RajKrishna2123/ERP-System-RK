@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Parakram</title>
+    <title>R . K . A . B</title>
     <link rel="stylesheet" "type=text/css" href="{% static 'rk/css/styles-merged.css' %}">
     <link rel="stylesheet" href="{% static 'rk/css/style.min.css'%}">
     <link rel="stylesheet" href="{% static 'rk/fonts/icomoon/style.css' %}">
@@ -28,14 +28,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://localhost:8000/index/" ><img src="{% static 'rk/img/final.png'%}"></a>
+          <a class="navbar-brand" href="http://localhost:8000/index/" >RAJ</a>
 
         </div>
 
         <div id="navbar-collapse" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
 
-            <li><a href="#" data-nav-section="Leaders">Green event for green future</a></li>
+            <li><a href="#" data-nav-section="features">This website is created by Raj Krishna</a></li>
 
           </ul>
         </div>
@@ -43,404 +43,102 @@
 
     </nav>
 
-    <section class="probootstrap-hero prohttp://localhost/probootstrap/frame/#Leadersbootstrap-slant" style="background-image:url({% static 'rk/img/t4.jpg'%});" data-section="home" data-stellar-background-ratio="0.5">
+    <section class="probootstrap-hero prohttp://localhost/probootstrap/frame/#featuresbootstrap-slant" style="background-image:url({% static 'rk/img/image_1.jpg'%});" data-section="home" data-stellar-background-ratio="0.5">
       <div class="container">
         <div class="row intro-text">
           <div class="col-md-8 col-md-offset-2 text-center">
-            <h1 class="probootstrap-heading probootstrap-animate">Parakram<br >Team Members</h1>
-  		
- 
-        <div class="row text-center mb100">
-          <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
-            <h2 class="mb30 text-black probootstrap-heading">Members</h2>
+            <h1 class="probootstrap-heading probootstrap-animate">R . K . A . B<br >SIGN UP</h1>
+  		<div class="login-form">
+				<form  action="database_updater/" method="GET" class="probootstrap-heading probootstrap-animate">
+    			{%csrf_token%}
+          {%if raw2%}
 
-          </div>
-        </div>
-        <!-- END row -->
-        <div class="row mb100">
-          <div class="col-md-8 col-md-pull-2 probootstrap-animate">
-            <p><img src="{% static 'rk/img/laptop_1.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <div class="col-md-4 col-md-pull-1 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">Mentor 	</h3>
-            <p><p><h2><b>Dr. Anshuman Das</b></h2></p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">Ph.d. NIT Rourkela.</li>
-              <li class="probootstrap-check">M. Tech NIT Jamsedhpur  .</li>
-              <li class="probootstrap-check">Assistant professsor , mechanicle  </li>
-		<li class="probootstrap-check">anshuman.das@dituniversity.edu.in</li>	
-            </ul>
-          </div>
-        </div>
-        <!-- END row -->
-        <div class="row mb100">
-          <!-- <div class="col-md-8 col-md-pull-2"> -->
-          <div class="col-md-8 col-md-push-5 probootstrap-animate">
-            <p><img src="{% static 'rk/img/img_showcase_2.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <!-- <div class="col-md-4 col-md-pull-1"> -->
-          <div class="col-md-4 col-md-pull-8 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">PARTICIPANT</h3>
-            <p><p><h3><b>Rahul singh </h3></b></p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">Btech Electronic and communication engineering 2nd year . </li>
-              <li class="probootstrap-check">C.no.-9528939281</li>
-		 <li class="probootstrap-check">HOD of Mechanical engineering and Robotics </li>             
-		 <li class="probootstrap-check">C.no.-9528939281</li>
-            </ul>
-          </div>
-        </div>
-        <!-- END row -->
+            <select class="form-control" name='sn'>
+              {%for i in raw2%}
+              <option>{{i.School_Name}}</option>
 
-        <div class="row mb100">
-          <div class="col-md-8 col-md-pull-2 probootstrap-animate">
-            <p><img src="{% static 'rk/img/laptop_1.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <div class="col-md-4 col-md-pull-1 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">Participant</h3>
-            <p><p>Shreshth Shrivastava</p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">B.Tech (2nd yr) Electronics and Communication</li>
-              <li class="probootstrap-check">Phone: 9755501022</li>
-              <li class="probootstrap-check">Email: 1000014997@dit.edu.in</li>
-            </ul>
-          </div>
-        </div>
-	 <!-- END row -->
-        <div class="row mb100">
-          <!-- <div class="col-md-8 col-md-pull-2"> -->
-          <div class="col-md-8 col-md-push-5 probootstrap-animate">
-            <p><img src="{% static 'rk/img/img_showcase_2.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <!-- <div class="col-md-4 col-md-pull-1"> -->
-          <div class="col-md-4 col-md-pull-8 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">PARTICIPANT</h3>
-            <p><p><h3><b>Adil Khan </h3></b></p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check"> B.Tech (2nd yr) Electronics and Communication</li>
-              <li class="probootstrap-check">Phone: 9755501022</li>
-		 <li class="probootstrap-check">Email: 1000014997@dit.edu.in</li>             
-		 
-            </ul>
-          </div>
-        </div>
-        <!-- END row -->
-	<!-- END row -->
+          {%endfor%}
+  {%endif%}
+					<input type="text"  name="name" placeholder="Full Name" required="" >
+					<input type="text"  name="fn" placeholder="Father Name" required="" >
+					<input type="text"  name="mn" placeholder="Mother Name" required="" >
+					<input type="email"  name="Email" placeholder="Email" required="" >
+					<div class="left-w3-agile">
+						<select class="form-control" name='stan'>
+							<option>Class</option>
+							<option>I</option>
+							<option>II</option>
+							<option>III</option>
+							<option>IV</option>
+							<option>V</option>
+ 							<option>VI</option>
+							<option>VII</option>
+							<option>VIII</option>
+							<option>IX</option>
+							<option>X</option>
+							<option>XI</option>
+							<option>XII</option>
+						</select>
+            <select class="form-control" name='city'>
+              <option>Andhra Pradesh</option>
+              <option>Arunachal Pradesh</option>
+              <option>Assam</option>
+              <option>Bihar</option>
+              <option> Chhattisgarh</option>
+              <option>Goa</option>
+              <option>Gujarat</option>
+              <option>Haryana</option>
+              <option>Himachal Pradesh</option>
+              <option>Jammu and Kashmir</option>
+              <option>Jharkhand</option>
+              <option>Karnataka </option>
+              <option>Kerala</option>
+              <option>Madhya Pradesh</option>
+              <option>Maharashtra</option>
+              <option>Manipur</option>
+              <option>Meghalaya</option>
+              <option>Mizoram</option>
+              <option>Nagaland</option>
+              <option>Odisha</option>
+              <option>Punjab</option>
+              <option>Rajasthan</option>
+              <option>Sikkim </option>
+              <option>Tamil Nadu</option>
+              <option>Telangana</option>
+              <option>Tripura</option>
+              <option>Uttar Pradesh</option>
+              <option>Uttarakhand</option>
+              <option>Uttarakhand</option>
+            </select>
+					</div>
+					<div class="right-agileits">
+            <select class="form-control" name='sec'>
+							<option>section</option>
+               <option>A</option>
+                <option>B</option>
+                	<option>C</option>
+                  	<option>D</option>
+                  </select>
+            {%if raw%}
 
-        <div class="row mb100">
-          <div class="col-md-8 col-md-pull-2 probootstrap-animate">
-            <p><img src="{% static 'rk/img/laptop_1.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <div class="col-md-4 col-md-pull-1 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">Participant</h3>
-            <p><p>Khagendra yadav</p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">B tech Mechanical engineering 2nd year</li>
-              <li class="probootstrap-check">Phone: 7007916479</li>
-              <li class="probootstrap-check">Email: dy5898116@gmail.com</li>
-            </ul>
-          </div>
-        </div>
-	 <!-- END row -->
- <!-- END row -->
-        <div class="row mb100">
-          <!-- <div class="col-md-8 col-md-pull-2"> -->
-          <div class="col-md-8 col-md-push-5 probootstrap-animate">
-            <p><img src="{% static 'rk/img/img_showcase_2.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <!-- <div class="col-md-4 col-md-pull-1"> -->
-          <div class="col-md-4 col-md-pull-8 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">PARTICIPANT</h3>
-            <p><p><h3><b>Manish Adhikari</h3></b></p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check"> Btech ME-AE 2nd yr </li>
-              <li class="probootstrap-check">Phone: 8476027047</li>
-		 <li class="probootstrap-check">Email: manishsiradhikari32@gmail.com</li>             
-		 
-            </ul>
-          </div>
-        </div>
-        <!-- END row -->
-<!-- END row -->
+  						<select class="form-control" name='ct'>
+                {%for i in raw%}
+  							<option>{{i.Teacher_Name}}</option>
 
-        <div class="row mb100">
-          <div class="col-md-8 col-md-pull-2 probootstrap-animate">
-            <p><img src="{% static 'rk/img/laptop_1.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <div class="col-md-4 col-md-pull-1 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">Participant</h3>
-            <p><p>Akhand pratap singh</p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">Btech ME-AE 2nd year</li>
-              <li class="probootstrap-check">Phone: 9554481571</li>
-              <li class="probootstrap-check">Email: Akhandsingh95153@gmail.com</li>
-            </ul>
-          </div>
-        </div>
-	 <!-- END row -->
- <!-- END row -->
-        <div class="row mb100">
-          <!-- <div class="col-md-8 col-md-pull-2"> -->
-          <div class="col-md-8 col-md-push-5 probootstrap-animate">
-            <p><img src="{% static 'rk/img/img_showcase_2.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <!-- <div class="col-md-4 col-md-pull-1"> -->
-          <div class="col-md-4 col-md-pull-8 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">PARTICIPANT</h3>
-            <p><p><h3><b>Piyush Singh </h3></b></p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check"> Btech ME-AE 2nd year</li>
-              <li class="probootstrap-check">Phone:  8445050453</li>
-		 <li class="probootstrap-check">Email: pankajmanral32110@gmail.com</li>             
-		 
-            </ul>
-          </div>
-        </div>
-        <!-- END row -->
-       <div class="row mb100">
-          <div class="col-md-8 col-md-pull-2 probootstrap-animate">
-            <p><img src="{% static 'rk/img/laptop_1.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <div class="col-md-4 col-md-pull-1 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">Participant</h3>
-            <p><p>Abhishek Agarwal</p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">Btech ME-AE 2nd year</li>
-              <li class="probootstrap-check">Phone:9643965624</li>
-              <li class="probootstrap-check">Email:awestdesert@gmail.com</li>
-            </ul>
-          </div>
-        </div>
-	 <!-- END row -->
-<!-- END row -->
-        <div class="row mb100">
-          <!-- <div class="col-md-8 col-md-pull-2"> -->
-          <div class="col-md-8 col-md-push-5 probootstrap-animate">
-            <p><img src="{% static 'rk/img/img_showcase_2.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <!-- <div class="col-md-4 col-md-pull-1"> -->
-          <div class="col-md-4 col-md-pull-8 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">PARTICIPANT</h3>
-            <p><p><h3><b>Pankaj singh manral</h3></b></p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">Btech ME-AE 2nd year</li>
-              <li class="probootstrap-check">Phone:  8445050453</li>
-		 <li class="probootstrap-check">Email: pankajmanral32110@gmail.com</li>             
-		 
-            </ul>
-          </div>
-        </div>
-        <!-- END row -->
-      <!-- END row -->
-       <div class="row mb100">
-          <div class="col-md-8 col-md-pull-2 probootstrap-animate">
-            <p><img src="{% static 'rk/img/laptop_1.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <div class="col-md-4 col-md-pull-1 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">Participant</h3>
-            <p><p>Pratyush Anand</p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">BTECH ME -2nd year</li>
-              <li class="probootstrap-check">Phone:9635500501</li>
-              <li class="probootstrap-check">Email:pr.anand2401@gmail.com</li>
-            </ul>
-          </div>
-        </div>
-	 <!-- END row -->
-<!-- END row -->
-        <div class="row mb100">
-          <!-- <div class="col-md-8 col-md-pull-2"> -->
-          <div class="col-md-8 col-md-push-5 probootstrap-animate">
-            <p><img src="{% static 'rk/img/img_showcase_2.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <!-- <div class="col-md-4 col-md-pull-1"> -->
-          <div class="col-md-4 col-md-pull-8 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">PARTICIPANT</h3>
-            <p><p><h3><b>Suchir garg</h3></b></p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">Btech ME 2nd year</li>
-              <li class="probootstrap-check">Phone:   7409727709</li>
-		 <li class="probootstrap-check">Email: suchirgarg01@gmail.com</li>             
-		 
-            </ul>
-          </div>
-        </div>
-        <!-- END row -->
-      <!-- END row -->
-       <div class="row mb100">
-          <div class="col-md-8 col-md-pull-2 probootstrap-animate">
-            <p><img src="{% static 'rk/img/laptop_1.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <div class="col-md-4 col-md-pull-1 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">Participant</h3>
-            <p><p>Shruti Bhardwaj</p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">BTech cse year 2</li>
-              <li class="probootstrap-check"></li>
-              <li class="probootstrap-check">Email:bhardwajshruti57@gmail.com</li>
-            </ul>
-          </div>
-        </div>
-	 <!-- END row -->
-<!-- END row -->
-        <div class="row mb100">
-          <!-- <div class="col-md-8 col-md-pull-2"> -->
-          <div class="col-md-8 col-md-push-5 probootstrap-animate">
-            <p><img src="{% static 'rk/img/img_showcase_2.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <!-- <div class="col-md-4 col-md-pull-1"> -->
-          <div class="col-md-4 col-md-pull-8 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">PARTICIPANT</h3>
-            <p><p><h3><b>Manimit Haldar</h3></b></p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">B.Tech CSE, 2nd Year</li>
-              <li class="probootstrap-check">Phone: </li>
-		 <li class="probootstrap-check">Email:manimit.haldar@gmail.com</li>             
-		 
-            </ul>
-          </div>
-        </div>
-        <!-- END row -->
-      <!-- END row -->
-       <div class="row mb100">
-          <div class="col-md-8 col-md-pull-2 probootstrap-animate">
-            <p><img src="{% static 'rk/img/laptop_1.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <div class="col-md-4 col-md-pull-1 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">Participant</h3>
-            <p><p>Dipesh Chaudhary</p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">B.tech CSE 2nd year</li>
-              <li class="probootstrap-check">Phone: 7366939005</li>
-              <li class="probootstrap-check">Email:mdipeshjswl98@gmail.com</li>
-            </ul>
-          </div>
-        </div>
-	 <!-- END row -->
-<!-- END row -->
-        <div class="row mb100">
-          <!-- <div class="col-md-8 col-md-pull-2"> -->
-          <div class="col-md-8 col-md-push-5 probootstrap-animate">
-            <p><img src="{% static 'rk/img/img_showcase_2.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <!-- <div class="col-md-4 col-md-pull-1"> -->
-          <div class="col-md-4 col-md-pull-8 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">PARTICIPANT</h3>
-            <p><p><h3><b>Gyanendra kumar </h3></b></p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">BTECH ME 2nd yr</li>
-              <li class="probootstrap-check">Phone:9140698998 </li>
-		 <li class="probootstrap-check">Email:gyanendra7gilli@gmail.com</li>             
-		 
-            </ul>
-          </div>
-        </div>
-        <!-- END row -->
-     <!-- END row -->
-       <div class="row mb100">
-          <div class="col-md-8 col-md-pull-2 probootstrap-animate">
-            <p><img src="{% static 'rk/img/laptop_1.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <div class="col-md-4 col-md-pull-1 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">Participant</h3>
-            <p><p>Vinayak Gupta </p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">B-Tech Mean First year</li>
-              <li class="probootstrap-check">Phone: 9351333063</li>
-              <li class="probootstrap-check">Email:guptavinayak098@gmail.com/li>
-            </ul>
-          </div>
-        </div>
-	 <!-- END row -->
-        <!-- END row -->
-        <div class="row text-center mb100">
-          <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
-            <h2 class="mb30 text-black probootstrap-heading">About US</h2>
-
-          </div>
-        </div>
-        <div class="row mb100">
-          <div class="col-md-8 col-md-pull-2 probootstrap-animate">
-            <p><img src="{% static 'rk/img/img_showcase_1.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <div class="col-md-4 col-md-pull-1 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">RAJ KRISHNA</h3>
-            <p><p>I am Raj Krishna right now a student of class 12 Kendriya vidayalaya Bailey road patna 14 </p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">this website is for my cs project </li>
-              <li class="probootstrap-check">also availiable at git hub </li>
-              <li class="probootstrap-check">A complete implimentationed project of 4 year classes at the same school</li>
-              <li class="probootstrap-check">this brilliant idea </li>
+            {%endfor%}
+    {%endif%}
+  						</select>
 
 
-            </ul>
-          </div>
-        </div>
-
-        <div class="row mb100">
-          <!-- <div class="col-md-8 col-md-pull-2"> -->
-          <div class="col-md-8 col-md-push-5 probootstrap-animate">
-            <p><img src="{% static 'rk/img/img_showcase_2.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <!-- <div class="col-md-4 col-md-pull-1"> -->
-          <div class="col-md-4 col-md-pull-8 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">School in Detail</h3>
-            <p><p>this website is equipped with analytical qbjectives <p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">In class comparison</li>
-              <li class="probootstrap-check">Class wise comparision</li>
-              <li class="probootstrap-check">Accademic comparision</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  
-			 
+					</div>
+					<input type="text"  name="Number" placeholder="Phone Number" required="" />
+					<input type="submit" value="Submit">
+				</form>
+			</div>
 		</div>
 	</div>
 </div>
-
 </section>
- <div class="container">
-        <div class="row text-center mb100">
-          <div class="col-md-8 col-md-offset-2 probootstrap-section-heading">
-            <h2 class="mb30 text-black probootstrap-heading">Features</h2>
-
-          </div>
-        </div>
-        <!-- END row -->
-        <div class="row mb100">
-          <div class="col-md-8 col-md-pull-2 probootstrap-animate">
-            <p><img src="{% static 'rk/img/laptop_1.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <div class="col-md-4 col-md-pull-1 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">Best For Every School</h3>
-            <p><p>This is best website to genrate results freely,even with most beauty.</p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">Easy to understand .</li>
-              <li class="probootstrap-check">Faster .</li>
-              <li class="probootstrap-check">Interactive UI</li>
-            </ul>
-          </div>
-        </div>
-        <!-- END row -->
-        <div class="row mb100">
-          <!-- <div class="col-md-8 col-md-pull-2"> -->
-          <div class="col-md-8 col-md-push-5 probootstrap-animate">
-            <p><img src="{% static 'rk/img/img_showcase_2.jpg'%}" alt="Free Template by uicookies.com" class="img-responsive probootstrap-shadow"></p>
-          </div>
-          <!-- <div class="col-md-4 col-md-pull-1"> -->
-          <div class="col-md-4 col-md-pull-8 probootstrap-section-heading">
-            <h3 class="text-primary probootstrap-heading-2">Perfect Comparision</h3>
-            <p><p>Here you can compare select toppers and analyze class wise subject wise result.</p></p>
-            <ul class="probootstrap-list">
-              <li class="probootstrap-check">In class comparison</li>
-              <li class="probootstrap-check">Class wise comparision</li>
-              <li class="probootstrap-check">Accademic comparision</li>
-            </ul>
-          </div>
-        </div>
-        <!-- END row -->		
 <script src="{% static 'rk/js/scripts.min.js'%}"></script>
 <script src="{% static 'rk/js/custom.js' %}"></script>
 
